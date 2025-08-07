@@ -1,39 +1,48 @@
 # RAG-ChildSafety-SongFilter
 
-An efficient and scalable solution for content moderation of songs shared on social media using Retrieval-Augmented Generation (RAG).
+Efficient, scalable content moderation for song lyrics ensuring child safety—built using a **Retrieval‑Augmented Generation (RAG)** pipeline instead of heavy LLM inference.
 
 ## 🎯 Project Overview
 
-This project presents a scalable and cost-efficient approach to content moderation of song lyrics shared on social media platforms, with a specific focus on child safety. Instead of relying on computationally expensive large language models (LLMs) for real-time analysis of every input, we leverage a Retrieval-Augmented Generation (RAG) pipeline to perform semantic evaluation.
-
-The system retrieves pre-embedded question-answer pairs related to content appropriateness and compares them against new song inputs via vector similarity search. This enables efficient classification without compromising moderation quality, significantly reducing inference time and resource consumption.
-
----
-
-## 🔧 Technologies & Tools Used
-
-- **Python**
-- **PyTorch**
-- **Hugging Face Transformers**
-- **SentenceTransformers**
-- **Retrieval-Augmented Generation (RAG)**
-- **Dot Product Similarity for Embedding Matching**
-- **Jupyter Notebook**
+- **Context**: Moderating song lyrics on social media for child safety.
+- **Approach**: Use pre-built QA embeddings, similarity search, and retrieval to classify songs as safe or not.
+- **Benefit**: Fast, resource-light, and effective moderation.
 
 ---
+##  Technologies
+| Tool / Library             | Usage |
+|----------------------------|-------|
+| PyTorch                    | Embedding generation |
+| Hugging Face Transformers  | Loading pretrained NLP models for text embedding and semantic search in RAG pipeline |
+| SentenceTransformers       | QA & lyric encoding |
+| Transformers               | Base model used for embedding |
+| NumPy                      | Numeric operations |
+| Python / Jupyter Notebook | Development environment |
 
+---
 ## 📂 Files
 
-- `RAG_with_PyTorch.ipynb`: Main notebook that implements the embedding generation, retrieval logic, similarity computation, and decision mechanism.
+- **notebooks/RAG-childSafety-songfilter.ipynb**: Full pipeline: embedding, retrieval, similarity, and decision logic.
 
 ---
 
-## 🚀 How It Works
+##  Workflow Overview
 
-1. **Pre-defined QA Embeddings**: A set of child-appropriateness questions and their corresponding “safe” or “not safe” answers are embedded.
-2. **Song Embedding**: Lyrics of a new song are embedded using the same model.
-3. **Retrieval**: Similarity (via dot product) is computed between the song and the QA embeddings.
-4. **Decision**: Based on the top similar matches, a decision is made on whether the song is child-friendly.
+1. **Embed QA pairs** (child-safety questions/answers)  
+2. **Embed song lyrics**  
+3. **Compute similarity** (dot product / cosine over top-N)  
+4. **Decide safety** based on retrieved top pairs  
+
+---
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/Azihadadi/RAG-ChildSafety-SongFilter.git
+cd RAG-ChildSafety-SongFilter
+pip install -r requirements.txt
+jupyter notebook notebooks/RAG-childSafety-songfilter.ipynb
+```
 
 ---
 
@@ -45,6 +54,9 @@ The system retrieves pre-embedded question-answer pairs related to content appro
 
 ---
 
-## 💬 Feedback
+## 📬 Contact
 
-Feel free to fork this repo, raise issues, or suggest improvements via pull requests. Your feedback is welcome!
+Feel free to connect if you're interested in this project or want to collaborate:
+
+- GitHub: [Azadeh Hadadi](https://github.com/Azihadadi)
+- LinkedIn: _[Azadeh Hadadi](https://www.linkedin.com/in/azadeh-hadadi/)_  
