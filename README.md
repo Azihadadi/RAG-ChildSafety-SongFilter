@@ -2,25 +2,23 @@
 
 Efficient, scalable content moderation for song lyrics ensuring child safety—built using a **Retrieval‑Augmented Generation (RAG)** pipeline instead of heavy LLM inference.
 
-## 🎯 Project Overview
+## Overview
 
 - **Context**: Moderating song lyrics on social media for child safety.
 - **Approach**: Use pre-built QA embeddings, similarity search, and retrieval to classify songs as safe or not.
 - **Benefit**: Fast, resource-light, and effective moderation.
 
 ---
-##  Technologies
-| Tool / Library             | Usage |
-|----------------------------|-------|
-| PyTorch                    | Embedding generation |
-| Hugging Face Transformers  | Loading pretrained NLP models for text embedding and semantic search in RAG pipeline |
-| SentenceTransformers       | QA & lyric encoding |
-| Transformers               | Base model used for embedding |
-| NumPy                      | Numeric operations |
-| Python / Jupyter Notebook | Development environment |
+## Tech Stack
+- PyTorch                    
+- Hugging Face Transformers  
+- SentenceTransformers       
+- Transformers               
+- NumPy                      
+- Python / Jupyter Notebook 
 
 ---
-## 📂 Files
+## Files
 
 - **notebooks/RAG-childSafety-songfilter.ipynb**: Full pipeline: embedding, retrieval, similarity, and decision logic.
 
@@ -35,18 +33,23 @@ Efficient, scalable content moderation for song lyrics ensuring child safety—b
 
 ---
 
-## 🚀 Quick Start
+## Setup Instructions
 
+1. Clone the repo:
 ```bash
 git clone https://github.com/Azihadadi/RAG-ChildSafety-SongFilter.git
 cd RAG-ChildSafety-SongFilter
+```
+
+2. Install dependencies:
+```bash 
 pip install -r requirements.txt
 jupyter notebook notebooks/RAG-childSafety-songfilter.ipynb
 ```
 
 ---
 
-## 🧠 Future Work
+## Future Work
 
 - Incorporating lightweight LLMs for borderline cases.
 - Expanding the knowledge base with more diverse QA pairs.
@@ -54,7 +57,7 @@ jupyter notebook notebooks/RAG-childSafety-songfilter.ipynb
 
 ---
 
-## 📬 Contact
+## Contact
 
 Feel free to connect if you're interested in this project or want to collaborate:
 
