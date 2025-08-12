@@ -18,11 +18,6 @@ Efficient, scalable content moderation for song lyrics ensuring child safety—b
 - Python / Jupyter Notebook 
 
 ---
-## Files
-
-- **notebooks/RAG-childSafety-songfilter.ipynb**: Full pipeline: embedding, retrieval, similarity, and decision logic.
-
----
 
 ##  Workflow Overview
 
