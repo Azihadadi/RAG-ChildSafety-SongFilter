@@ -1,4 +1,4 @@
-# RAG-ChildSafety-SongFilter
+# RAG-childsafety-songfilter
 
 Efficient, scalable content moderation for song lyrics ensuring child safety—built using a **Retrieval‑Augmented Generation (RAG)** pipeline instead of heavy LLM inference.
 
@@ -32,14 +32,14 @@ Efficient, scalable content moderation for song lyrics ensuring child safety—b
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/Azihadadi/RAG-ChildSafety-SongFilter.git
+git clone https://github.com/Azihadadi/RAG-childsafety-songfilter.git
 cd RAG-ChildSafety-SongFilter
 ```
 
 2. Install dependencies:
 ```bash 
 pip install -r requirements.txt
-jupyter notebook notebooks/RAG-childSafety-songfilter.ipynb
+jupyter notebook notebooks/RAG-childsafety-songfilter.ipynb
 ```
 
 ---
@@ -52,9 +52,3 @@ jupyter notebook notebooks/RAG-childSafety-songfilter.ipynb
 
 ---
 
-## Contact
-
-Feel free to connect if you're interested in this project or want to collaborate:
-
-- GitHub: [Azadeh Hadadi](https://github.com/Azihadadi)
-- LinkedIn: _[Azadeh Hadadi](https://www.linkedin.com/in/azadeh-hadadi/)_  
